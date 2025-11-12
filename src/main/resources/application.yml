@@ -1,0 +1,21 @@
+spring:
+  h2:
+    console.enabled: true
+  datasource:
+    url: jdbc:h2:mem:kafkademodb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
+  kafka:
+    producer:
+      bootstrap-servers: localhost:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+
+
+
+
+
+
